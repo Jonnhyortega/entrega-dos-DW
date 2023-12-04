@@ -1,3 +1,8 @@
+:root {
+  --celeste: #14e6dd;
+  --bodyColor: rgb(192, 0, 0);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--bodyColor);
 }
 
 nav {
@@ -13,7 +18,7 @@ nav {
   flex-direction: row;
   width: 100%;
   max-height: 10%;
-  border-bottom: 7px solid #14e6dd;
+  border-bottom: 7px solid var(--celeste);
   background-color: black;
 }
 
@@ -42,7 +47,7 @@ a {
   padding: 1rem;
   height: 1.5rem;
   text-decoration: none;
-  color: #14e6dd;
+  color: var(--celeste);
   letter-spacing: 0.2rem;
   font-family: "Rubik", sans-serif;
 }
