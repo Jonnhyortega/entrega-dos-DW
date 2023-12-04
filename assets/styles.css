@@ -1,6 +1,6 @@
 :root {
   --celeste: #14e6dd;
-  --bodyColor: rgb(192, 0, 0);
+  --bodyColor: rgb(0, 0, 0);
 }
 
 * {
@@ -16,6 +16,8 @@ body {
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: baseline;
+  gap: 50rem;
   width: 100%;
   max-height: 10%;
   border-bottom: 7px solid var(--celeste);
@@ -32,15 +34,15 @@ img {
   width: 130px;
   height: 115px;
   margin: 0.5rem;
+  padding-left: 0.7rem;
 }
 
 #navbar {
   position: relative;
-  top: 2.7rem;
-  left: 48rem;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  align-items: center;
+  bottom: 0.5rem;
 }
 
 a {
