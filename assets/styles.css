@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&family=Lexend:wght@100;900&family=Montserrat:ital,wght@1,200&family=Oswald:wght@200&family=Rubik&display=swap");
 :root {
   --celeste: #14e6dd;
   --bodyColor: rgb(0, 0, 0);
+  --font-text-primary: "Rubik", sans-serif;
+  --font-text-secondary: "Lexend", sans-serif;
 }
 
 * {
@@ -13,22 +15,35 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   background-color: var(--bodyColor);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 /* header */
 header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-height: 10%;
-  border-bottom: 5px solid var(--celeste);
+  background-color: var(--bodyColor);
+  position: fixed;
+  border-bottom: 2px solid var(--celeste);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-#logo {
-  width: 130px;
-  height: 115px;
+header img {
+  width: 70px;
+  height: 60px;
   margin-left: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   padding-left: 0.7rem;
 }
 
@@ -36,6 +51,21 @@ header {
   padding: 0px 25px 0px 0px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#navbar ul li span a {
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#navbar ul li span a:hover {
+  border-bottom: 2px solid white;
+  border-bottom-width: 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0px 10px 10px 10px;
+  letter-spacing: 5px;
+  color: white;
 }
 
 ul {
@@ -53,9 +83,108 @@ ul li {
 
 li a {
   color: var(--celeste);
-  font-family: "Bebas Neue", sans-serif;
-  font-family: "Rubik", sans-serif;
+  font-family: var(--font-text-primary);
   font-weight: 900;
 }
 
 /* header */
+
+/* MAIN */
+
+/* SECTION 1 */
+#section-one {
+  padding: 50px;
+  border: 3px solid var(--celeste);
+  border-radius: 20px;
+  background-color: var(--bodyColor);
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 400px;
+  gap: 70px;
+}
+
+#container-slogan-text-buttons {
+  display: flex;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#container-slogan-text-buttons span,
+#container-slogan-text-buttons p {
+  font-size: 60px;
+  font-family: var(--font-text-primary);
+  font-weight: 900;
+  text-align: center;
+}
+
+#container-slogan-text-buttons p {
+  font-size: 20px;
+  font-family: var(--font-text-secondary);
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+#container-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#button-one {
+  border: 2px solid var(--celeste);
+  border-radius: 15px;
+  padding: 8px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#button-two {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 8px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#button-one:hover {
+  border: 2px solid white;
+  background-color: var(--celeste);
+  color: black;
+  font-weight: 500;
+}
+#button-two:hover {
+  border: 2px solid var(--celeste);
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+/* SECTION 1 */
+
+/* SECTION 2 */
+#section-two {
+  padding: 50px;
+  /* border: 3px solid var(--celeste); */
+  border-radius: 20px;
+  background-color: var(--bodyColor);
+  width: 900px;
+  height: 400px;
+  gap: 70px;
+  color: white;
+}
+
+#section-two p {
+  font-family: var(--font-text-secondary);
+}
+
+/* SECTION 2 */
+/* MAIN */
