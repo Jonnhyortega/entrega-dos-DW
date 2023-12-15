@@ -3,80 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/logo-portfolio.png" />
     <link rel="stylesheet" href="assets/styles.css" />
-  
+
     <title>Ortega NAVBAR</title>
   </head>
   <body>
-        <header>
-            
-            <img id="logo" src="assets/logo-portfolio.png" alt="Imagen del logo" />
-            
-            <nav id="navbar">
-                
-                <ul>
-                    <li>
-                    <span><a href="#">Inicio</a></span>
-                    </li>
-                    <li>
-                    <span><a href="#">Proyectos</a></span>
-                    </li>
-                    <li>
-                    <span><a href=#">Contacto</a></span>
-                    </li>
-                </ul>
+    <header>
+      <img id="logo" src="assets/logo-portfolio.png" alt="Imagen del logo" />
 
-            </nav>
-        </header>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <span><a href="#">Inicio</a></span>
+          </li>
+          <li>
+            <span><a href="#">Proyectos</a></span>
+          </li>
+          <li>
+            <div class="container-contact">
+              <div id="container-img">
+                <img
+                  id="logo"
+                  class="logo-contact"
+                  src="/assets/logo-portfolio.png"
+                  alt=""
+                />
+              </div>
+              <div class="contact-name contact-style">
+                <img
+                  id="img-contact"
+                  src="/assets/contacts-imgs/usuario.png"
+                  alt="Logo perfil"
+                />
+                <span>Jonathan</span>
+                <span>Ortega</span>
+              </div>
+              <div class="contact-addres contact-style">
+                <img
+                  id="img-contact"
+                  src="/assets/contacts-imgs/marcador-de-posicion.png"
+                  alt="Logo maps"
+                />
+                <span>Springfield, Masachusetts</span>
+                <span>Avenida siempre viva, 1234</span>
+              </div>
+              <div class="contact-phone contact-style">
+                <img
+                  id="img-contact"
+                  src="/assets/contacts-imgs/llamada.png"
+                  alt="Logo telefono"
+                />
+                <span>+67 444</span>
+                <span>234-455-789</span>
+              </div>
+              <div class="contact-email contact-style">
+                <img
+                  id="img-contact"
+                  src="/assets/contacts-imgs/gmail.png"
+                  alt="Logo arroba"
+                />
+                <span>diseñoweb</span>
+                <span>@fullstack.com</span>
+              </div>
+              <div class="last-line">
+                <a href="">
+                  <img
+                    id="img-contact"
+                    src="/assets/contacts-imgs/linkedin.png"
+                    alt="Logo de linkedin"
+                  />
+                </a>
+                <span>Muchas gracias por su visita</span>
+              </div>
+            </div>
+            <label id="label-contact" for="contact">Contacto</label>
+            <input type="checkbox" id="contact" />
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
-          <section id="section-one">
-            <div id="container-slogan-text-buttons">
-              <div id="container-imagen">
-                <img src="/assets/logo-portfolio.png" alt="Logo de pagina">
-              </div>
-              <p>
-                Me dedico al desarrollo de sitios web. Actualmente cursando 
-                la carrera full stack en NUCBA.
-              </p>              
-              <div id="container-buttons">
-               <a href=""><button id="button-one">CALL TO ACTION</button></a>
-                <a href="#"><button id="button-two">LEARN MORE</button></a>
-              </div>
-                        
-            </div>
-            
-          </section>
+    <main>
+      <section id="section-one">
+        <div id="container-slogan-text-buttons">
+          <div id="container-imagen">
+            <img src="/assets/logo-portfolio.png" alt="Logo de pagina" />
+          </div>
+          <p>
+            Me dedico al desarrollo de sitios web. Actualmente cursando la
+            carrera full stack en NUCBA.
+          </p>
+          <div id="container-buttons">
+            <a href=""><button id="button-one">CALL TO ACTION</button></a>
+            <a href="#"><button id="button-two">LEARN MORE</button></a>
+          </div>
+        </div>
+      </section>
 
-          <section id="section-two">
-            <div id="first-sub-section">
-              <p>
-                 Construccion y diseño de
-                 experiencias digitales.
-                 Actualmente enfocado en 
-                 crear productos que resuelvan problemas 
-                 que se nos presentas en situaciones
-                 cotidianas de la vida.
-              </p>
-            </div>
-            <div id="line-divisory"></div>
-            <div id="second-sub-section">
-              <div id="card">
-                <img src="/assets/cards-imgs/signo-de-dolar.png " alt="">
-                <p>Precios accesibles y acordes.</p>
-              </div>
-              <div id="card">
-                <img src="/assets/cards-imgs/fiabilidad.png" alt="">
-                <p>Rapides, eficacia y calidad.</p>
-              </div>
-              <div id="card">
-                <img src="/assets/cards-imgs/garantia.png" alt="">
-                <p>Garantia.</p>
-              </div>
-            
-              
-            </div>
-          </section>
-        </main>
+      <section id="section-two">
+        <div id="first-sub-section">
+          <p>
+            Construccion y diseño de experiencias digitales. Actualmente
+            enfocado en crear productos que resuelvan problemas que se nos
+            presentan en situaciones cotidianas de la vida.
+          </p>
+        </div>
+        <div id="line-divisory"></div>
+        <div id="second-sub-section">
+          <div id="card">
+            <img src="/assets/cards-imgs/signo-de-dolar.png " alt="" />
+            <p>Accesible y acorde.</p>
+          </div>
+          <div id="card">
+            <img src="/assets/cards-imgs/fiabilidad.png" alt="" />
+            <p>Rapidés, eficacia y calidad.</p>
+          </div>
+          <div id="card">
+            <img src="/assets/cards-imgs/garantia.png" alt="" />
+            <p>Garantia.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
