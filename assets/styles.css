@@ -18,13 +18,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   background-color: var(--bodyColor);
 }
 
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 /* header */
@@ -32,8 +33,10 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: var(--bodyColor);
+  background: linear-gradient(to top, var(--celeste), var(--bodyColor));
+  /* background-color: var(--bodyColor); */
   position: fixed;
+  padding: 10px;
   border-bottom: 2px solid var(--celeste);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -41,10 +44,11 @@ header {
 
 header img {
   width: 70px;
-  height: 60px;
-  margin-left: 0.5rem;
+  height: 70px;
+  border-radius: 50px;
+  /* margin-left: 0.5rem;
   margin-top: 0.7rem;
-  padding-left: 0.7rem;
+  padding-left: 0.7rem; */
 }
 
 #navbar {
@@ -57,6 +61,7 @@ header img {
 #navbar ul li span a {
   transition-duration: 0.4s;
   cursor: pointer;
+  color: #010101;
 }
 #navbar ul li span a:hover {
   border-bottom: 2px solid white;
@@ -72,12 +77,10 @@ ul {
   display: flex;
   gap: 30px;
   text-decoration: none;
-  color: var(--celeste);
 }
 
 ul li {
   letter-spacing: 0.1rem;
-  color: var(--celeste);
   list-style: none;
 }
 
@@ -94,14 +97,14 @@ li a {
 /* SECTION 1 */
 #section-one {
   padding: 50px;
-  border: 3px solid var(--celeste);
+  /* border: 3px solid var(--celeste); */
   border-radius: 20px;
   background-color: var(--bodyColor);
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 900px;
+  max-width: 12000px;
   height: 400px;
   gap: 70px;
 }
@@ -123,7 +126,14 @@ li a {
   text-align: center;
 }
 
+#container-slogan-text-buttons span {
+  background: linear-gradient(to bottom, var(--celeste), var(--bodyColor));
+  background-clip: text;
+  color: transparent;
+}
+
 #container-slogan-text-buttons p {
+  background-clip: text;
   font-size: 20px;
   font-family: var(--font-text-secondary);
   font-weight: 100;
@@ -172,18 +182,76 @@ li a {
 
 /* SECTION 2 */
 #section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   padding: 50px;
-  /* border: 3px solid var(--celeste); */
+  border: 3px solid var(--celeste);
   border-radius: 20px;
-  background-color: var(--bodyColor);
-  width: 900px;
-  height: 400px;
-  gap: 70px;
+  /* background: linear-gradient(to-bottom, #010101, #14e6dd); */
+  max-width: 1200px;
+  /* height: 400px; */
   color: white;
 }
 
-#section-two p {
+#line-divisory {
+  border: 2px solid var(--celeste);
+  width: 400px;
+}
+
+#section-two p,
+#first-sub-section h2 {
   font-family: var(--font-text-secondary);
+  font-size: 20px;
+}
+
+#first-sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: right;
+}
+
+#second-sub-section {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  width: auto;
+}
+
+#card {
+  background: linear-gradient(to top, var(--celeste), var(--bodyColor));
+  border: 1px solid white;
+
+  border-radius: 25px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  gap: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#card p {
+  padding: 8px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  background-clip: text;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#card img {
+  border: 1px solid white;
+  width: 80px;
+  background-color: white;
+  border-radius: 60%;
+  padding: 10px;
 }
 
 /* SECTION 2 */
