@@ -11,17 +11,25 @@
   #label-menuToggle {
     display: flex;
     border-radius: 50px;
-    background-color: var(--celeste);
+    padding: 10px;
+    background: linear-gradient(to top, var(--celeste), var(--bodyColor));
+    cursor: pointer;
   }
-
+  #menu-toggle:checked + #label-menuToggle{
+    background-color: white;
+  }
   #menu-toggle:checked + #navbar {
     display: flex;
+    
+  
   }
 
   .container-contact {
     left: 0px;
-    top: 185px;
+    top: 280px;
     width: 100%;
+    height: 2000px;
+    border: none;
     align-items: center;
   }
 
@@ -30,7 +38,7 @@
   }
 
   #section-one {
-    width: 600px;
+    width: 500px;
     border: 1px solid white;
   }
 
@@ -41,7 +49,7 @@
   }
 
   #first-sub-section {
-    width: 600px;
+    width: 500px;
     text-align: center;
   }
 
@@ -69,20 +77,46 @@
 
 @media (max-width: 576px) {
   #section-one {
-    width: 400px;
-  }
-
-  #section-two{
-    width: 400px;
-  }
-
-  #first-sub-section{
     width: 300px;
+    height: auto;
+    align-items: center;
   }
 
-  #second-sub-section{
+  #section-two {
     width: 400px;
+  }
+
+  #first-sub-section {
+    width: auto;
+  }
+
+  #second-sub-section {
+    width: auto;
     gap: 40px;
+    align-items: center;
+  }
+
+  #card {
+    width: 70%;
   }
 }
 
+@media (max-width: 405px) {
+  #logo {
+    display: none;
+  }
+
+  #section-one {
+    border: none;
+  }
+
+  #second-sub-section {
+    display: flex;
+    align-items: center;
+  }
+
+  #card {
+    width: 50%;
+    left: 100px;
+  }
+}

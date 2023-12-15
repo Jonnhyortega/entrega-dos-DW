@@ -26,7 +26,7 @@ body {
 }
 
 main {
-  /* width: auto; */
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,6 @@ header {
   justify-content: space-between;
   width: 100%;
   background: linear-gradient(to top, var(--celeste), var(--bodyColor));
-  /* background-color: var(--bodyColor); */
   position: sticky;
   padding: 10px;
   border-bottom: 2px solid var(--celeste);
@@ -49,15 +48,19 @@ header {
   color: white;
 }
 
-header label #menu-toggle{
-  display: ;
+header label img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  /* border: 1px solid white; */
+  padding: 20px;
+  background: linear-gradient(to top, var(--celeste), var(--bodyColor));
 }
 
-header img {
+#logo {
   width: 70px;
   height: 70px;
   border-radius: 50px;
-  border: 1px solid white;
 }
 
 #navbar {
@@ -65,12 +68,14 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 100px;
+  
 }
 
 #navbar ul li span a,
 #navbar ul li label,
 .label-contact {
-  transition-duration: 0.4s;
+  
   cursor: pointer;
   color: #010101;
 }
@@ -83,6 +88,7 @@ header img {
   padding: 0px 10px 10px 10px;
   letter-spacing: 5px;
   color: white;
+ 
 }
 
 ul {
@@ -109,37 +115,38 @@ input[type="checkbox"] {
 
 #label-menuToggle {
   display: none;
+  background-color: white;
   /* width: 400px; */
   /* border: 1px solid white; */
 }
-header label img {
+#logo-hamurguesa {
   width: 30px;
   height: 30px;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .container-contact {
   display: none;
   width: 350px;
   /* height: 550px; */
-  /* z-index: 2; */
+  z-index: 2;
   flex-direction: column;
   /* align-items: center; */
   gap: 25px;
   border: 10px solid var(--celeste);
   position: absolute;
-  left: 950px;
   top: 70px;
+  right: 260px;
   background-color: black;
   border-radius: 20px;
   padding: 25px;
   color: white;
   font-weight: var(--font-text-secondary);
+  transition-duration: 1s;
 }
 
 #contact:checked + .container-contact {
   display: flex;
-  transition-duration: 1s;
 }
 
 #img-contact {
@@ -318,7 +325,6 @@ header label img {
 #card {
   background: linear-gradient(to top, var(--celeste), var(--bodyColor));
   border: 1px solid white;
-
   border-radius: 25px;
   width: 270px;
   display: flex;
