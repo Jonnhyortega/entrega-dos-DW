@@ -44,6 +44,9 @@ header {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+#navbar ul li label {
+  color: white;
+}
 
 header img {
   width: 70px;
@@ -60,7 +63,8 @@ header img {
 }
 
 #navbar ul li span a,
-#navbar ul li label {
+#navbar ul li label,
+.label-contact {
   transition-duration: 0.4s;
   cursor: pointer;
   color: #010101;
@@ -90,20 +94,19 @@ ul li,
 
 li a,
 #navbar ul li label {
-  color: var(--celeste);
   font-family: var(--font-text-primary);
   font-weight: 900;
 }
 
 input[type="checkbox"] {
-  /* display:  .none; */
+  display: none;
 }
 
 .container-contact {
   display: none;
   width: 350px;
   /* height: 550px; */
-  z-index: 2;
+  /* z-index: 2; */
   flex-direction: column;
   /* align-items: center; */
   gap: 25px;
@@ -118,8 +121,9 @@ input[type="checkbox"] {
   font-weight: var(--font-text-secondary);
 }
 
-#label-contact:checked + .container-contact {
+#contact:checked + .container-contact {
   display: flex;
+  transition-duration: 1s;
 }
 
 #img-contact {
@@ -330,3 +334,30 @@ input[type="checkbox"] {
 
 /* SECTION 2 */
 /* MAIN */
+
+/* FOOTER */
+
+FOOTER {
+  /* border: 1px solid white; */
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: 200px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(to bottom, var(--celeste), var(--bodyColor)); */
+}
+footer span {
+  font-family: var(--font-text-primary);
+  color: white;
+}
+
+footer span a {
+  font-weight: 900;
+  color: white;
+}
+
+/* FOOTER */
