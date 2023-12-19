@@ -52,7 +52,6 @@ header label img {
   width: 60px;
   height: 60px;
   border-radius: 50px;
-  /* border: 1px solid white; */
   padding: 20px;
   background: linear-gradient(to top, var(--celeste), var(--bodyColor));
 }
@@ -63,7 +62,6 @@ header label img {
   border-radius: 50px;
   padding: 10px;
   background: linear-gradient(to top, var(--celeste), var(--bodyColor));
-
 }
 
 #navbar {
@@ -116,22 +114,17 @@ input[type="checkbox"] {
 #label-menuToggle {
   display: none;
   background-color: white;
-  /* width: 400px; */
-  /* border: 1px solid white; */
 }
 #logo-hamurguesa {
   width: 30px;
   height: 30px;
-  /* background-color: white; */
 }
 
 .container-contact {
   display: none;
   width: 350px;
-  /* height: 550px; */
   z-index: 2;
   flex-direction: column;
-  /* align-items: center; */
   gap: 25px;
   border: 10px solid var(--celeste);
   position: absolute;
@@ -193,8 +186,6 @@ input[type="checkbox"] {
 
 /* SECTION 1 */
 #section-one {
-  /* padding: 50px; */
-  /* border: 3px solid var(--celeste); */
   border-radius: 20px;
   background-color: var(--bodyColor);
   margin-bottom: 100px;
@@ -286,9 +277,7 @@ input[type="checkbox"] {
   padding: 50px;
   border: 3px solid var(--celeste);
   border-radius: 20px;
-  /* background: linear-gradient(to-bottom, #010101, #14e6dd); */
   max-width: 1200px;
-  /* height: 400px; */
   color: white;
 }
 
@@ -311,7 +300,6 @@ input[type="checkbox"] {
 }
 
 #second-sub-section {
-  /* border: 1px solid white; */
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -356,7 +344,6 @@ input[type="checkbox"] {
 /* FOOTER */
 
 FOOTER {
-  /* border: 1px solid white; */
   padding: 20px;
   border-radius: 20px;
   width: 100%;
@@ -366,8 +353,8 @@ FOOTER {
   gap: 100px;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(to bottom, var(--celeste), var(--bodyColor)); */
 }
+
 footer span {
   font-family: var(--font-text-primary);
   color: white;
